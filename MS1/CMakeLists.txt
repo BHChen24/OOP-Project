@@ -12,7 +12,7 @@ add_executable(MS1
         Menu.h
         Utils.cpp
         Utils.h
-        #dateTester.cpp
+        dateTester.cpp
         #menuTester.cpp
         #ms1_tester.cpp
 )
