@@ -1,0 +1,3 @@
+D:/Seneca/SenecaFileExchanger/SenecaCPAs2/OOP244/OOP-Project/MS1/cmake-build-debug/CMakeFiles/MS1.dir
+D:/Seneca/SenecaFileExchanger/SenecaCPAs2/OOP244/OOP-Project/MS1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Seneca/SenecaFileExchanger/SenecaCPAs2/OOP244/OOP-Project/MS1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

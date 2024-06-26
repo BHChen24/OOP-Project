@@ -1,13 +1,21 @@
-// Final Project Milestone 1 
-// Date Module
-// File	Date.h
-// Version 1.0
-// Author	Fardad Soleimanloo
-// Revision History
+// Citation and Sources
+
+//Final Project Milestone 1
+//Module:   Date
+//Filename: Date.h
+//Version   0.1
+//Author:   Baihua Chen
+
+//Revision History
 // -----------------------------------------------------------
 // Name               Date                 Reason
-// 
+// Baihua Chen        2024-06-25           First version, v0.1
+// -----------------------------------------------------------
+//I have done all the coding by myself and only copied the code
+//that my professor provided to complete my workshops and assignments.
+
 /////////////////////////////////////////////////////////////////
+
 #ifndef SENECA_DATE_H__
 #define SENECA_DATE_H__
 #include <iostream>
@@ -35,18 +43,19 @@ namespace seneca {
       int daysSince0001_1_1()const; // returns number of days passed since the date 0001/1/1
       bool validate();             /* validates the date setting the error code and then returning the result 
                                     true, if valid, and false if invalid.*/
-      void errCode(int);           // sets the error code
-      int systemYear()const;       // returns the current system year
-      bool bad()const;             // return true if
-      int mdays()const;            // returns the number of days in current month
-      void setToToday();           // sets the date to the current date (system date)
-   public:
-      Date();                      // creates a date with current date
-      Date(int year, int mon, int day); /* create a date with assigned values
+void errCode(int);           // sets the error code
+int systemYear() const;       // returns the current system year
+bool bad() const;             // return true if
+int mdays() const;            // returns the number of days in current month
+void setToToday();           // sets the date to the current date (system date)
+public:
+
+Date();                      // creates a date with current date
+Date(int year, int mon, int day); /* create a date with assigned values
                                          then validates the date and sets the 
                                          error code accordingly */
-      int errCode()const;         // returns the error code or zero if date is valid
-      const char* dateStatus()const;  // returns a string corresponding the current status of the date
+int errCode() const;         // returns the error code or zero if date is valid
+const char* dateStatus()const;  // returns a string corresponding the current status of the date
       int currentYear()const;         // returns the m_CUR_YEAR value;
 
       
