@@ -70,8 +70,8 @@ build CMakeFiles/MS1.dir/Utils.cpp.obj: CXX_COMPILER__MS1_unscanned_Debug D$:/Se
   OBJECT_DIR = CMakeFiles\MS1.dir
   OBJECT_FILE_DIR = CMakeFiles\MS1.dir
 
-build CMakeFiles/MS1.dir/dateTester.cpp.obj: CXX_COMPILER__MS1_unscanned_Debug D$:/Seneca/SenecaFileExchanger/SenecaCPAs2/OOP244/OOP-Project/MS1/dateTester.cpp || cmake_object_order_depends_target_MS1
-  DEP_FILE = CMakeFiles\MS1.dir\dateTester.cpp.obj.d
+build CMakeFiles/MS1.dir/menuTester.cpp.obj: CXX_COMPILER__MS1_unscanned_Debug D$:/Seneca/SenecaFileExchanger/SenecaCPAs2/OOP244/OOP-Project/MS1/menuTester.cpp || cmake_object_order_depends_target_MS1
+  DEP_FILE = CMakeFiles\MS1.dir\menuTester.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -ID:/Seneca/SenecaFileExchanger/SenecaCPAs2/OOP244/OOP-Project/MS1/.
   OBJECT_DIR = CMakeFiles\MS1.dir
@@ -85,7 +85,7 @@ build CMakeFiles/MS1.dir/dateTester.cpp.obj: CXX_COMPILER__MS1_unscanned_Debug D
 #############################################
 # Link the executable MS1.exe
 
-build MS1.exe: CXX_EXECUTABLE_LINKER__MS1_Debug CMakeFiles/MS1.dir/Date.cpp.obj CMakeFiles/MS1.dir/Menu.cpp.obj CMakeFiles/MS1.dir/Utils.cpp.obj CMakeFiles/MS1.dir/dateTester.cpp.obj
+build MS1.exe: CXX_EXECUTABLE_LINKER__MS1_Debug CMakeFiles/MS1.dir/Date.cpp.obj CMakeFiles/MS1.dir/Menu.cpp.obj CMakeFiles/MS1.dir/Utils.cpp.obj CMakeFiles/MS1.dir/menuTester.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\MS1.dir
