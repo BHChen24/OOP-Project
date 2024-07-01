@@ -34,17 +34,19 @@ namespace seneca {
       "Bad Day Value"
     };
     const int MIN_YEAR = 1500;
+    const int BUFFER_CLEARER = 2000;
 
     class Date {
     private:
-        int m_year;
-        int m_mon;
-        int m_day;
+        int m_year;                         // 1500 ~ 2024
+        int m_mon;                          // 0 ~ 12
+        int m_day;                          // 0 ~ 31 {1, 3, 5, 7, 8, 10, 12}, 0 ~ 30 {4, 6, 9, 11}, 0 ~ 28 {2}
+                                            // 0 ~ 29 {2} when year % 4 == 0 then year % 100 != 0 || year % 400 == 0
         int m_ErrorCode;
         int m_CUR_YEAR;
         int daysSince0001_1_1() const;      // returns number of days passed since the date 0001/1/1
         bool validate();                    /* validates the date setting the error code and then returning the result
-                                            true, if valid, and false if invalid.*/
+                                                true, if valid, and false if invalid.*/
         void errCode(int);                  // sets the error code
         int systemYear() const;             // returns the current system year
         bool bad() const;                   // return true if
@@ -56,6 +58,20 @@ namespace seneca {
         Date(int year, int mon, int day);   /* create a date with assigned values
                                                  then validates the date and sets the
                                                  error code accordingly */
+
+        std::istream& read(std::istream& is = std::cin);
+        std::ostream& write(std::ostream& os = std::cout) const;
+
+        bool operator== (const Date& rhs) const;
+        bool operator>= (const Date& rhs) const;
+        bool operator<= (const Date& rhs) const;
+        bool operator!= (const Date& rhs) const;
+        bool operator> (const Date& rhs) const;
+        bool operator< (const Date& rhs) const;
+
+        int operator-(const Date& rhs);
+        operator bool() const;
+
         int errCode() const;                // returns the error code or zero if date is valid
         const char* dateStatus()const;      // returns a string corresponding the current status of the date
         int currentYear()const;             // returns the m_CUR_YEAR value;
